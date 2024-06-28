@@ -84,7 +84,7 @@ enum layers{
 #define NEO2_L3_RPARENTHESES         DE_RPRN                     // )
 #define NEO2_L3_HYPHEN_MINUS         DE_MINS                     // -
 #define NEO2_L3_COLON                DE_COLN                     // :
-#define NEO2_L3_AT                   DE_AT                       // @
+#define NEO2_L3_AT                   RALT(DE_L)                     // @
 #define NEO2_L3_HASH                 DE_HASH                     // #
 #define NEO2_L3_PIPE                 RALT(KC_7)                  // |
 #define NEO2_L3_TILDE                RALT(DE_N)                  // ~
@@ -124,7 +124,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ESC,   KC_BRID,  KC_BRIU,  KC_MCTL,  KC_LPAD,  RGB_VAD,  RGB_VAI,  KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_SNAP,  KC_SIRI,  RGB_MOD,
         NEO2_NOP, KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_MINS,  KC_EQL,   KC_BSPC,  KC_INS,   KC_HOME,  KC_PGUP,
         NEO2_NOP, NEO2_L3_ELLIPSIS, NEO2_L3_UNDERSCORE, NEO2_L3_LBRACKET,  NEO2_L3_RBRACKET,  NEO2_L3_CIRCUMFLEX, NEO2_L3_EXCLAMATION,  NEO2_L3_LESSTHAN,     NEO2_L3_GREATERTHAN, NEO2_L3_EQUAL, NEO2_L3_AMPERSAND,          _______,            _______,            KC_DEL,   KC_END,   KC_PGDN,
-        NEO2_NOP, NEO2_L3_BSLASH,   NEO2_L3_SLASH,      NEO2_L3_CLBRACKET, NEO2_L3_CRBRACKET, NEO2_L3_ASTERISK,   NEO2_L3_QUESTIONMARK, NEO2_L3_LPARENTHESES, NEO2_L3_RPARENTHESES,  NEO2_L3_HYPHEN_MINUS,       NEO2_L3_COLON,     KC_AT,   KC_TRNS,  KC_ENT,
+        NEO2_NOP, NEO2_L3_BSLASH,   NEO2_L3_SLASH,      NEO2_L3_CLBRACKET, NEO2_L3_CRBRACKET, NEO2_L3_ASTERISK,   NEO2_L3_QUESTIONMARK, NEO2_L3_LPARENTHESES, NEO2_L3_RPARENTHESES,  NEO2_L3_HYPHEN_MINUS,       NEO2_L3_COLON,     NEO2_L3_AT,   KC_TRNS,  KC_ENT,
         NEO2_NOP, KC_TRNS,          NEO2_L3_HASH,       NEO2_L3_DOLLAR,    NEO2_L3_PIPE,      NEO2_L3_TILDE,      NEO2_L3_BACKTICK, NEO2_L3_PLUS,  NEO2_L3_PERCENT,      NEO2_L3_DOUBLE_QUOTE,  NEO2_L3_SINGLE_QUOTE,       NEO2_L3_SEMICOLON, KC_RSFT,            KC_UP,
         KC_LCTL,  KC_LOPTN, KC_LCMMD,                               KC_SPC,                                 KC_RCMMD, KC_ROPTN, MO(MAC_FN),KC_RCTL, KC_LEFT,  KC_DOWN,  KC_RGHT),
     
